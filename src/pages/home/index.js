@@ -1,10 +1,10 @@
-import logo from '../../assets/logo.png';
 import './index.css';
 
 function Home() {
   return (
     <div >
-      <h1>Home</h1>
+      <div className='banner_img'>Chez vous, partout et ailleurs</div>
+      <div className='gallery'></div>
     </div>
   );
 }

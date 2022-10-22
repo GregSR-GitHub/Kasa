@@ -5,7 +5,7 @@ import './header.css';
 function Header() {
     return (
         <header className="App-header">
-            <img src={logo} alt="logo" />
+            <Link to="/"><img src={logo} alt="logo" /></Link>
             <nav>
                 <ul  className="Menu">
                     <li><Link to="/" className="Menu-link">Accueil</Link></li>
