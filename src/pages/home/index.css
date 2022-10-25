@@ -9,12 +9,16 @@
   object-fit: cover;
   object-position: center;
   border-radius: 25px;
-  margin: 30px auto;
+  margin: 0 auto;
   font-size: 48px;
   color: white;
 }
 
-.gallery{
+.lodging_list{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-flow: row wrap;
   background: #F7F7F7;
   max-width: 1240px;
   border-radius: 25px;

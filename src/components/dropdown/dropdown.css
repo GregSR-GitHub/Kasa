@@ -4,8 +4,6 @@
     background-color: #F7F7F7;
     border-radius: 5px;
     color: #FF6060;
-    font-size: 24px;
-    margin: 20px;
 }
 
 .dropdown_title{
@@ -21,6 +19,8 @@
 
 .dropdown_text{
     padding: 20px;
+    display: flex;
+    flex-flow: column nowrap;
 }
 
 .dropdown_arrow{

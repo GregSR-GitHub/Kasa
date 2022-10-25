@@ -1,7 +1,7 @@
 .App-header {
     min-height: 150px;
     max-width: 1240px;
-    margin: 10px auto;
+    margin: 0 auto;
     display: flex;
     flex-direction: row;
     align-items: center;

@@ -1,4 +1,5 @@
 import Home from '../pages/home/index';
+import Lodging from '../pages/lodging/index';
 import About from '../pages/about/index';
 import Error from '../pages/error/index';
 import Header from '../layouts/header/index';
@@ -13,6 +14,9 @@ function App() {
         <Route path="/about">
             <About />
         </Route>  
+        <Route path="/lodging/:idLodging">
+            <Lodging />
+        </Route> 
         <Route exact path="/">
             <Home />
         </Route> 
