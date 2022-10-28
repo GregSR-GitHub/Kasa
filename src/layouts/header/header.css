@@ -1,7 +1,14 @@
-.App-header {
+.header {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0;
+    padding: 0 20px;
+  }
+
+  .header_nav {
+    width: 100%;
     min-height: 150px;
     max-width: 1240px;
-    margin: 0 auto;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -10,13 +17,17 @@
     color: #FF6060
   }
 
+  .logo{
+    width: 211px;
+    height: 68px;
+  }
+
   .Menu{
+    width: 25%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 10px;
     list-style-type: none;
-    width: 310px;
   }
 
   .Menu li{
@@ -26,9 +37,43 @@
   .Menu-link{
     color: #FF6060;
     text-decoration: none;
+    white-space: nowrap;
   }
 
   .Menu-link:hover{
     color: #FF6060;
     text-decoration: underline ;
+  }
+
+  /* --- Verson Tablette --- */
+@media screen and (max-width: 992px) {
+
+  .Menu{
+    width: 40%;
+  }
+
+  .logo{
+    width: 145px;
+    height: 47px;
+  }
+
+}
+
+  /* --- Verson Portable --- */
+  @media screen and (max-width: 400px) {
+
+    .header_nav {
+      min-height: 80px;
+    }
+
+    .Menu{
+      width: 120px;
+      margin-left: 5px;
+    }
+
+    .Menu-link {
+      font-size: 12px;
+      text-transform: uppercase;
+    }
+  
   }

@@ -3,21 +3,28 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    max-width: 1240px;
-    margin: auto;
+    max-width: 1280px;
+    min-width: 300px;
+    padding: 0 20px;
     color: #FF6060;
+    font-size: 18px;
 }
 
-.lodging-info_header{
+.info_header{
+    position: relative;
     width: 100%;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    align-items: center;
+    min-height: 64px;
     margin-top: 30px;
 }
 
+.info_header h1{
+    font-size: 36px;
+}
+
 .host{
+    position: absolute;
+    right: 0;
+    top: 0;
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
@@ -40,14 +47,14 @@
     flex-flow: row nowrap;
     justify-content: space-between;
     width: 100%;
-    margin: 20px auto;
+    margin: 10px auto;
 }
 
 .info_tag{
-    height: 36px;
-    width: 50%;
+    min-height: 36px;
+    width: 80%;
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     align-items: center;
 }
 
@@ -56,9 +63,16 @@
     color: white;
     border-radius: 5px;
     padding: 4px 40px;
-    margin: 0 4px;
+    margin: 2px 4px;
     font-size: 14px;
+    white-space: nowrap;
+}
 
+.info_rating{
+    height: 36px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
 }
 
 .info_dropdowns{
@@ -73,4 +87,101 @@
 
     width: 45%;
     font-size: 18px;
+}
+
+/* --- Verson Tablette --- */
+@media screen and (max-width: 992px) {
+
+    .lodging{
+        max-width: 992px;
+        margin: 0;
+        padding: 0 10px;
+    }
+
+    .info_header h1{
+        font-size: 24px;
+    }
+
+    .info_tag-rating{
+        display: flex;
+        flex-flow: column nowrap;
+        width: 100%;
+        margin: 10px auto;
+    }
+
+    .host{
+        top: auto;
+        bottom: 0;
+    }
+    .tag{
+        padding: 3px 30px;
+        font-size: 10px;
+    }
+
+    .info_rating{
+        height: 64px;
+    }
+
+    .info_dropdowns{
+        display: flex;
+        flex-flow: column ;
+        justify-content: center;
+        width: 100%;
+        margin: 20px auto;
+    }
+    
+    .info_dropdowns_section{
+    
+        width: 100%;
+        font-size: 16px;
+        margin: 10px 0;
+    }
+
+}
+
+/* --- Verson Portable --- */
+@media screen and (max-width: 400px) {
+
+    .lodging{
+        max-width: 400px;
+        margin: 0 10px;
+        font-size: 14px;
+    }
+
+    .info_header h1{
+        font-size: 18px;
+    }
+
+    .host-name{
+        width: 32px;
+        margin-right: 5px;
+        text-align: right;
+        font-size: 12px;
+    }
+    
+    .star{
+        width: 15px;
+    }
+
+    .host_picture{
+        width: 32px;
+        height: 32px;
+        border-radius: 16px;
+    }
+
+    .info_tag-rating{
+        margin: 0 auto;
+    }
+
+    .info_rating{
+        height: 32px;
+    }
+
+    .info_dropdowns{
+        margin: 10px auto;
+    }
+
+    .info_dropdowns_section{
+        font-size: 12px;
+    }
 }

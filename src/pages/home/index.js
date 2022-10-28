@@ -16,12 +16,12 @@ function Home() {
 //      )
 //  }, [])
   return (
-    <div >
+    <main className='home'>
       <div className='banner_img'>Chez vous, partout et ailleurs</div>
       <div className='lodging_list'>
         { LocationList.map((element, index) => (<Thumb  key={`${element}-${index}`} title={element.title} cover={element.cover}  id={element.id}/>))}
       </div>
-    </div>
+    </main>
   );
 }
 

@@ -1,6 +1,5 @@
 .dropdown{
     width: 100%;
-    max-width: 1047px;
     background-color: #F7F7F7;
     border-radius: 5px;
     color: #FF6060;
@@ -26,3 +25,16 @@
 .dropdown_arrow{
     transition: all 250ms ease;
 }
+
+  /* --- Verson Portable --- */
+  @media screen and (max-width: 400px) {
+
+    .dropdown_title{
+        height: 30px;
+    }
+
+    .dropdown_arrow{
+        width: 15px;
+    }
+
+  }

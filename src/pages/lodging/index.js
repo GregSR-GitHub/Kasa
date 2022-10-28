@@ -16,23 +16,21 @@ function Lodging() {
     return (
         <div className='lodging'>
             <Gallery img={lodgingDatas.pictures} />
-            <div className='lodging-info_header'>
-               <div>
-                    <h1>{ lodgingDatas.title }</h1>
-                    <span>{ lodgingDatas.location }</span>
-                </div> 
+            <div className='info_header'>
+                <h1>{ lodgingDatas.title }</h1>
+                <span>{ lodgingDatas.location }</span>
                 <div className='host'>
                     <span  className='host-name'>{ lodgingDatas.host.name }</span>
                     <img src={lodgingDatas.host.picture} alt={ lodgingDatas.host.name }  className='host_picture'/>
                 </div>
-            </div>
-            <div  className='info_tag-rating'>
-                <div className='info_tag'>
-                    {lodgingDatas.tags.map((tag) => <span key={tag}  className='tag'>{tag}</span> )}
-            </div>
-                <div>
-                    {range.map((rangeElem) =>
-                lodgingDatas.rating >= rangeElem ? <img src={ratingOrange} alt={lodgingDatas.rating}  key={rangeElem.toString()}/> : <img src={ratingGrey} alt={lodgingDatas.rating}  key={rangeElem.toString()}/>)}
+                <div  className='info_tag-rating'>
+                    <div className='info_tag'>
+                        {lodgingDatas.tags.map((tag) => <span key={tag}  className='tag'>{tag}</span> )}
+                </div>
+                    <div  className='info_rating'>
+                        {range.map((rangeElem) =>
+                    lodgingDatas.rating >= rangeElem ? <img src={ratingOrange} alt={lodgingDatas.rating}  key={rangeElem.toString()}  className='star'/> : <img src={ratingGrey} alt={lodgingDatas.rating}  key={rangeElem.toString()}  className='star'/>)}
+                    </div>
                 </div>
             </div>
             <div className='info_dropdowns'>

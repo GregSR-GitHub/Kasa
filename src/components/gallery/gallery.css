@@ -22,3 +22,22 @@
     transform: translateX(-50%);
     color: white;
 }
+
+  /* --- Verson Portable --- */
+  @media screen and (max-width: 400px) {
+
+    .gallery{
+        height: 255px;
+        border-radius: 10px;
+    }
+
+    .arrow_side{
+        width: 12px;
+        margin: 0 5px;
+    }
+
+    .gallery_counter{
+        display: none;
+    }
+
+  }

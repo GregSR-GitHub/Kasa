@@ -4,9 +4,9 @@ import './header.css';
  
 function Header() {
     return (
-        <header className="App-header">
-            <Link to="/"><img src={logo} alt="logo" /></Link>
-            <nav>
+        <header className="header">
+            <nav  className="header_nav">
+                <Link to="/"><img src={logo} alt="logo" className='logo'/></Link>
                 <ul  className="Menu">
                     <li><Link to="/" className="Menu-link">Accueil</Link></li>
                     <li><Link to="/about" className="Menu-link">A propos</Link></li>

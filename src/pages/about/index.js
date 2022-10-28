@@ -9,10 +9,10 @@ function About() {
     return (
         <div className='about'>
             <div className='banner_about_img'></div>
-            <Dropdown title='Fiabilité' text={text_fiabilite} />
-            <Dropdown title='Respect' text={text_respect} />
-            <Dropdown title='Service' text={text_fiabilite} />
-            <Dropdown title='Responsabilité' text={text_fiabilite} />
+            <div className='about_dropdown'><Dropdown  title='Fiabilité' text={text_fiabilite} /></div>
+            <div className='about_dropdown'><Dropdown className='about_dropdown' title='Respect' text={text_respect} /></div>
+            <div className='about_dropdown'><Dropdown className='about_dropdown' title='Service' text={text_fiabilite} /></div>
+            <div className='about_dropdown'><Dropdown className='about_dropdown' title='Responsabilité' text={text_fiabilite} /></div>
         </div>
     )
 }
