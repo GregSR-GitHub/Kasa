@@ -4,26 +4,19 @@ import About from '../pages/about/index';
 import Error from '../pages/error/index';
 import Header from '../layouts/header/index';
 import Footer from '../layouts/footer/index';
-import { BrowserRouter as Router , Route, Switch} from 'react-router-dom'
+import { BrowserRouter as Router , Route, Routes} from 'react-router-dom'
 
 function App() {
     return ( 
     <Router>
       <Header />
-      <Switch>
-        <Route path="/about">
-            <About />
-        </Route>  
-        <Route path="/lodging/:idLodging">
-            <Lodging />
-        </Route> 
-        <Route exact path="/">
-            <Home />
-        </Route> 
-        <Route>
-            <Error />
-        </Route>
-      </Switch>
+      <Routes>
+        <Route path="/about" element={<About />} /> 
+        <Route path="/lodging/:idLodging"  element={<Lodging />} /> 
+        <Route exact path="/" element={<Home />} />
+        <Route path="/error" element={<Error />} /> 
+        <Route path="*"  element={<Error />} />
+      </Routes>
       <Footer />  
     </Router>
 )}

@@ -1,4 +1,4 @@
-import { useParams } from 'react-router-dom'
+import { useParams, Navigate  } from 'react-router-dom'
 import LocationList from '../../datas/datas.json';
 import Dropdown from '../../components/dropdown';
 import Gallery from '../../components/gallery';
@@ -12,7 +12,9 @@ function Lodging() {
     const lodgingDatas = lodgingFilterByID[0];
     const range = [1, 2, 3, 4, 5]
     // const lodgingEquipements = lodgingDatas.equipments.map((plant) => (<span>{plant}</span>));
-
+    if(!lodgingDatas){
+        return (<Navigate to="/error" replace />)
+    }
     return (
         <div className='lodging'>
             <Gallery img={lodgingDatas.pictures} />
