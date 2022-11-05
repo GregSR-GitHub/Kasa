@@ -1,23 +1,13 @@
 import './index.css';
 import Thumb from '../../components/thumb/index';
+import Banner from '../../components/banner/index';
+import BannerHomeImg from '../../assets/banner.png';
 import LocationList from '../../datas/datas.json';
-// import { useEffect } from 'react'
 
 function Home() {
-//   useEffect(() => {
-//     const locationData = LocationList.JSON.strigify();
-//     fetch(locationData, {
-//       method: 'POST',
-//       body: JSON.stringify(object)
-//     })
-//          .then((response) => response.json()
-//          .then(({ locationData }) => console.log(locationData))
-//          .catch((error) => console.log(error))
-//      )
-//  }, [])
   return (
     <main className='home'>
-      <div className='banner_img'>Chez vous, partout et ailleurs</div>
+      <Banner  text="Chez vous, partout et ailleurs" img={BannerHomeImg}/>
       <div className='lodging_list'>
         { LocationList.map((element, index) => (<Thumb  key={`${element}-${index}`} title={element.title} cover={element.cover}  id={element.id}/>))}
       </div>

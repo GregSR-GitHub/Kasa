@@ -1,0 +1,27 @@
+.tags{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    min-height: 36px;
+    width: 80%;
+}
+
+.tag{
+    background-color: #FF6060;
+    color: white;
+    border-radius: 5px;
+    padding: 4px 40px;
+    margin: 2px 4px;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+/* --- Verson Tablette --- */
+@media screen and (max-width: 992px) {
+
+    .tag{
+        padding: 3px 30px;
+        font-size: 10px;
+    }
+
+}

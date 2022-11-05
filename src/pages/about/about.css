@@ -25,11 +25,25 @@
     color: white;
   }
 
-  .about_dropdown{
+  .about_collapse{
     width: 100%;
     max-width: 1023px;
     margin: 15px auto;
   }
+
+  /* --- Verson Tablette --- */
+@media screen and (max-width: 992px) {
+
+  .about{
+    max-width: 992px;
+    margin: 0;
+  }
+  .about_collapse{
+    max-width: 900px;
+    margin: 10px 0;
+  }
+
+}
 
     /* --- Verson Portable --- */
     @media screen and (max-width: 400px) {
@@ -42,7 +56,7 @@
             font-size: 12px;
         }
 
-        .about_dropdown{
+        .about_collapse{
             margin: 10px auto;
           }
       

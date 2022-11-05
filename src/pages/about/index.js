@@ -1,4 +1,6 @@
-import Dropdown from '../../components/dropdown';
+import Collapse from '../../components/collapse';
+import Banner from '../../components/banner/index';
+import BannerAboutImg from '../../assets/banner_about.png';
 import './about.css';
 
 function About() {
@@ -10,11 +12,11 @@ function About() {
 
     return (
         <div className='about'>
-            <div className='banner_about_img'></div>
-            <div className='about_dropdown'><Dropdown  title='Fiabilité' text={text_fiability} /></div>
-            <div className='about_dropdown'><Dropdown className='about_dropdown' title='Respect' text={text_respect} /></div>
-            <div className='about_dropdown'><Dropdown className='about_dropdown' title='Service' text={text_service} /></div>
-            <div className='about_dropdown'><Dropdown className='about_dropdown' title='Responsabilité' text={text_responsability} /></div>
+            <Banner  text="" img={BannerAboutImg}/>
+            <div className='about_collapse'><Collapse  title='Fiabilité' text={text_fiability} /></div>
+            <div className='about_collapse'><Collapse className='about_collapse' title='Respect' text={text_respect} /></div>
+            <div className='about_collapse'><Collapse className='about_collapse' title='Service' text={text_service} /></div>
+            <div className='about_collapse'><Collapse className='about_collapse' title='Responsabilité' text={text_responsability} /></div>
         </div>
     )
 }

@@ -1,11 +1,11 @@
-.dropdown{
+.collapse{
     width: 100%;
     background-color: #F7F7F7;
     border-radius: 5px;
     color: #FF6060;
 }
 
-.dropdown_title{
+.collapse_title{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -16,24 +16,24 @@
     border-radius: 5px;
 }
 
-.dropdown_text{
+.collapse_text{
     padding: 20px;
     display: flex;
     flex-flow: column nowrap;
 }
 
-.dropdown_arrow{
+.collapse_arrow{
     transition: all 250ms ease;
 }
 
   /* --- Verson Portable --- */
   @media screen and (max-width: 400px) {
 
-    .dropdown_title{
+    .collapse_title{
         height: 30px;
     }
 
-    .dropdown_arrow{
+    .collapse_arrow{
         width: 15px;
     }
 

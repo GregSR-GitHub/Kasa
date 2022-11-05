@@ -21,27 +21,6 @@
     font-size: 36px;
 }
 
-.host{
-    position: absolute;
-    right: 0;
-    top: 0;
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-}
-
-.host-name{
-    width: 80px;
-    margin-right: 10px;
-    text-align: right;
-}
-
-.host_picture{
-    width: 64px;
-    height: 64px;
-    border-radius: 32px;
-}
-
 .info_tag-rating{
     display: flex;
     flex-flow: row nowrap;
@@ -50,32 +29,7 @@
     margin: 10px auto;
 }
 
-.info_tag{
-    min-height: 36px;
-    width: 80%;
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-}
-
-.tag{
-    background-color: #FF6060;
-    color: white;
-    border-radius: 5px;
-    padding: 4px 40px;
-    margin: 2px 4px;
-    font-size: 14px;
-    white-space: nowrap;
-}
-
-.info_rating{
-    height: 36px;
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-}
-
-.info_dropdowns{
+.info_collapse{
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
@@ -83,7 +37,7 @@
     margin: 20px auto;
 }
 
-.info_dropdowns_section{
+.info_collapse_section{
 
     width: 45%;
     font-size: 18px;
@@ -109,20 +63,7 @@
         margin: 10px auto;
     }
 
-    .host{
-        top: auto;
-        bottom: 0;
-    }
-    .tag{
-        padding: 3px 30px;
-        font-size: 10px;
-    }
-
-    .info_rating{
-        height: 64px;
-    }
-
-    .info_dropdowns{
+    .info_collapse{
         display: flex;
         flex-flow: column ;
         justify-content: center;
@@ -130,7 +71,7 @@
         margin: 20px auto;
     }
     
-    .info_dropdowns_section{
+    .info_collapse_section{
     
         width: 100%;
         font-size: 16px;
@@ -152,36 +93,15 @@
         font-size: 18px;
     }
 
-    .host-name{
-        width: 50px;
-        margin-right: 5px;
-        text-align: right;
-        font-size: 12px;
-    }
-    
-    .star{
-        width: 15px;
-    }
-
-    .host_picture{
-        width: 32px;
-        height: 32px;
-        border-radius: 16px;
-    }
-
     .info_tag-rating{
         margin: 0 auto;
     }
 
-    .info_rating{
-        height: 32px;
-    }
-
-    .info_dropdowns{
+    .info_collapse{
         margin: 10px auto;
     }
 
-    .info_dropdowns_section{
+    .info_collapse_section{
         font-size: 12px;
     }
 }
